@@ -21,6 +21,6 @@ public class Wallet {
     @Column(name = "wallet_id")
     private UUID walletId;
 
-    @Positive
+    @Positive (message = "не может быть отрицательное количество денег")
     private BigDecimal amount;
 }
